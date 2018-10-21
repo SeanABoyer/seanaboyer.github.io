@@ -391,7 +391,7 @@ angular.module('ui.calendar', [])
 );
 ```
 
-Setup to get it working in ServiceNow (This goes in the Client Script)
+Modificaiton of directive to get it working in ServiceNow (This goes in the Client Script) on the Angualr Provider
 
 ``` javascript
 function () {
