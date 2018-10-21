@@ -962,5 +962,5 @@ Server Script
 
 
 ### The Update Set!
-
-Once you commit the update set you can navigate to https://{instance-name}.service-now.com/sp?id=angular_calendar_example to see examples of using the widget with instance options and input options (Embedded widgets). These allow us to not have to manipulate the base widget.
+[Download](https://raw.githubusercontent.com/SeanABoyer/seanaboyer.github.io/master/files/Angular-calendar-widget.xml)
+Once you commit the update set you can navigate to [https://{instance-name}.service-now.com/sp?id=angular_calendar_example](https://{instance-name}.service-now.com/sp?id=angular_calendar_example) to see examples of using the widget with instance options and input options (Embedded widgets). These allow us to not have to manipulate the base widget.
