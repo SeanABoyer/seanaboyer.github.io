@@ -2,7 +2,7 @@
 layout: post
 title: A Service Portal Angular Calendar Widget Using Full Calendar
 ---
-A widget to show a calendar similar to those on [http://angular-ui.github.io/ui-calendar/](http://angular-ui.github.io/ui-calendar/).
+A widget to show a calendar similar to those on [http://angular-ui.github.io/ui-calendar/](http://angular-ui.github.io/ui-calendar/), with dynamic updating based on record updates.
 
 ## Problem
 My current company had a use case where they wanted to see Upcomming Changes on a calendar view (They were unhappy with the OOB conflict calendar and wanted one that looks like the Cab WorkBench Calendar).  
