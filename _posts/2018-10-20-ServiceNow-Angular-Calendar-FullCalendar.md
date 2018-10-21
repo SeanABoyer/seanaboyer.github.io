@@ -739,8 +739,9 @@ function () {
 	};
 }
 ```
-6. As you can see, we moved all the code from the directive into a function with no parameters, and changed the controller property to the function in that was in the controller, instead of the name of the controller. We also had to uiCalendarConfig parameter(the constant) into the function and default it to an empty object.
-7. Save the New Angular Provider.
+___As you can see, we moved all the code from the directive into a function with no parameters, and changed the controller property to the function in that was in the controller, instead of the name of the controller. We also had to uiCalendarConfig parameter(the constant) into the function and default it to an empty object.___
+
+ 6.Save the New Angular Provider.
 
 
 ### Creating the Widget
