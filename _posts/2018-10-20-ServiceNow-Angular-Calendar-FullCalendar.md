@@ -16,11 +16,11 @@ I took the ui-calendar directive off of [http://angular-ui.github.io/ui-calendar
 ## In-Depth Solution OverView
 
 ### Moving a Directive Into ServiceNow.
-1. Search for Service Portal in the filter Navigator
-2. Click on the Angular Providers Module.
-3. Click New
-4. Name the Angular Provider uiCalendar, set the type to Directive.
-5. We then move the code around to work with how ServiceNow implements these Angualr Providers.
+1.Search for Service Portal in the filter Navigator   
+2.Click on the Angular Providers Module.  
+3.Click New  
+4.Name the Angular Provider uiCalendar, set the type to Directive.  
+5.We then move the code around to work with how ServiceNow implements these Angualr Providers.  
 
 Original Code from [https://github.com/angular-ui/ui-calendar/blob/master/src/calendar.js](https://github.com/angular-ui/ui-calendar/blob/master/src/calendar.js)
 ``` javascript
@@ -739,28 +739,28 @@ function () {
 	};
 }
 ```
-___As you can see, we moved all the code from the directive into a function with no parameters, and changed the controller property to the function in that was in the controller, instead of the name of the controller. We also had to uiCalendarConfig parameter(the constant) into the function and default it to an empty object.___
+___As you can see, we moved all the code from the directive into a function with no parameters, and changed the controller property to the function  that was in the controller, instead of the name of the controller. We also had to uiCalendarConfig constant into the function and default it to an empty object.___
 
  6.Save the New Angular Provider.
-
+![alt text](https://raw.githubusercontent.com/SeanABoyer/seanaboyer.github.io/master/img/posts/angularCalendar/angularProvider.PNG "Angular Provider") 
 
 ### Creating the Widget
 We will create the new widget, realte the angular provider and the necesarry dependencies and write the code.
 
-1. Search for Service Portal in the filter Navigator
-2. Click on the widgets module
-3. Click New
-4. Name the Widget "Angular Calendar"
-5. Save the new Widget
-6. Scroll down to the related lists, select the Angular Providers and select edit...
-7. Move the uiCalendar Angular Provider(directive) from the left slush bucket to the right and save.
-8. Select the Dependencies reated list and select new
-9. Name the New Dependency "FullCalendar v3.8.0" and save.
-10. Select the JS Includes Related list and select new
-11. Set the display name to "FullCalendar 3.8 JS", source to URL and JS file url to "https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.8.0/fullcalendar.min.js" and save.
-12. Select the CSS Includes Related list and select new
-13. Set the display name to "FullCalendar 3.8 CSS", source to URL and JS file url to "https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.8.0/fullcalendar.min.css" and save.
-14. Set the HTML, Client Script and Server Script as follows below:
+1.Search for Service Portal in the filter Navigator  
+2.Click on the widgets module  
+3.Click New  
+4.Name the Widget "Angular Calendar"  
+5.Save the new Widget  
+6.Scroll down to the related lists, select the Angular Providers and select edit...  
+7.Move the uiCalendar Angular Provider(directive) from the left slush bucket to the right and save.  
+8.Select the Dependencies reated list and select new  
+9.Name the New Dependency "FullCalendar v3.8.0" and save.  
+10.Select the JS Includes Related list and select new  
+11.Set the display name to "FullCalendar 3.8 JS", source to URL and JS file url to "https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.8.0/fullcalendar.min.js" and save.  
+12.Select the CSS Includes Related list and select new  
+13.Set the display name to "FullCalendar 3.8 CSS", source to URL and JS file url to "https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.8.0/fullcalendar.min.css" and save.  
+14.Set the HTML, Client Script and Server Script as follows below:  
 
 HTML
 
@@ -959,11 +959,13 @@ Server Script
 		}
 	}
 })();
-```
+```  
+![alt text](https://raw.githubusercontent.com/SeanABoyer/seanaboyer.github.io/master/img/posts/angularCalendar/widgetEditor.PNG "Widget Editor") 
 
 
 ### The Update Set!
 [Download](https://raw.githubusercontent.com/SeanABoyer/seanaboyer.github.io/master/files/Angular-calendar-widget.xml)
 
 
-Once you commit the update set you can navigate to [https://{instance-name}.service-now.com/sp?id=angular_calendar_example](https://{instance-name}.service-now.com/sp?id=angular_calendar_example) to see examples of using the widget with instance options and input options (Embedded widgets). These allow us to not have to manipulate the base widget.
+Once you commit the update set you can navigate to [https://{instance-name}.service-now.com/sp?id=angular_calendar_example](https://{instance-name}.service-now.com/sp?id=angular_calendar_example) to see examples of using the widget with instance options and input options (Embedded widgets). These allow us to not have to manipulate the base widget.  
+![alt text](https://raw.githubusercontent.com/SeanABoyer/seanaboyer.github.io/master/img/posts/angularCalendar/examplePage.PNG "Example Page") 
