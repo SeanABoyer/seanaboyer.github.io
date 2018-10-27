@@ -10,6 +10,9 @@ My current company had a use case where they wanted to see Upcomming Changes on 
 **Update Set Below!!**
 
 
+**Updated on 10/27/18** - Allow for event [Options](https://fullcalendar.io/docs/event-object) to be passed in with filters 
+
+
 ## Quick Solution OverView
 I took the ui-calendar directive off of [http://angular-ui.github.io/ui-calendar/](http://angular-ui.github.io/ui-calendar/) and implemented it in ServiceNow. I then added functionality so that on clicking of an event it will display the record on a form.
 
@@ -794,6 +797,7 @@ function($controller,$scope,spUtil,spModal){
 	* @param {Object} filterObj - The filterObj that was used to initilzie the recordWatcher.
 	*/
 	$scope.createEvent = function(obj,filterObj){
+		console.log(filterObj);
 		var event = {"title":"",
 								 "id":"",
 								 "start":"",
@@ -801,9 +805,14 @@ function($controller,$scope,spUtil,spModal){
 								 "table":filterObj.table,
 								 "view":filterObj.view || "angularCalendar"}
 		event.id = obj.data.sys_id;
-		event.title = obj.data.record[filterObj.fields.display].display_value;
+		event.title = obj.data.record[filterObj.fields.title].display_value;
 		event.start = obj.data.record[filterObj.fields.start].value;
 		event.end = obj.data.record[filterObj.fields.end].value;
+		for(var j in filterObj.eventOptions){
+			var key = j;
+			var value = filterObj.eventOptions[j];
+			event[key] = value;
+		}
 		$scope.events.push(event);
 	}
 	/*
@@ -816,16 +825,12 @@ function($controller,$scope,spUtil,spModal){
 		var oldEvent = _.find($scope.events,function(listObj){
 			return listObj.id == obj.data.sys_id;
 		});
-		if(obj.data.record[filterObj.fields.display].display_value){
-			oldEvent.title = obj.data.record[filterObj.fields.display].display_value;
+		var index = $scope.events.indexOf(oldEvent);
+		for(var field in filterObj.fields){
+			if(obj.data.record[filterObj.fields[field]] != undefined){
+				oldEvent[field] = obj.data.record[filterObj.fields[field]].display_value;
+			}
 		}
-		if(obj.data.record[filterObj.fields.start]){
-			oldEvent.start = obj.data.record[filterObj.fields.start].value;
-		}
-		if(obj.data.record[filterObj.fields.end]){
-			oldEvent.end = obj.data.record[filterObj.fields.end].value;	
-		}
-		$scope.events.push(oldEvent);
 
 	}
 	/*
@@ -836,7 +841,7 @@ function($controller,$scope,spUtil,spModal){
 		for(var i in $scope.filters){
 			var filterObj = $scope.filters[i];
 			spUtil.recordWatch($scope, filterObj.table, filterObj.encodedQuery, function(obj){
-
+				console.log(obj.data.operation);
 				switch(obj.data.operation){
 					case "insert":
 						$scope.createEvent(obj,filterObj);
@@ -898,7 +903,7 @@ Server Script
 
 ``` javascript
 (function() {
-	var defaultCalendar = {};
+	var defaultCalendar = {"timezone":gs.getUser().getTZ()};
 	var defaultEvents = [];
 	var defaultFilters = [];
 	var parsedOptions = {};
@@ -906,10 +911,6 @@ Server Script
 
 	data.events = input.events || parsedOptions.events || defaultEvents;
 	data.filters = input.filters || parsedOptions.filters || defaultFilters;
-	/*
-	* @description -If filters are provided, get the inital data.
-	* @author - Sean Boyer
-	*/
 	if(data.filters.length > 0){
 		generateEventsFromFilters();
 	}
@@ -947,12 +948,21 @@ Server Script
 										 "table":"",
 										 "view":""}
 				//Set the Values.
-				event.title = gr.getDisplayValue(obj.fields.display);
+				event.title = gr.getDisplayValue(obj.fields.title);
 				event.id = gr.getUniqueValue();
-				event.start = gr.getValue(obj.fields.start);
-				event.end = gr.getValue(obj.fields.end);
+				event.start = gr.getDisplayValue(obj.fields.start);
+				event.end = gr.getDisplayValue(obj.fields.end);
 				event.table = gr.getTableName();
-				event.view = obj.view || "angularCalendar"
+				event.view = obj.view || "angular-calendar"
+				
+				//For each property in the other section add it to the event object.
+				//These properties options can be found here:
+				//https://fullcalendar.io/docs/event-object
+				for(var j in obj.eventOptions){
+					var key = j;
+					var value = obj.eventOptions[j];
+					event[key] = value;
+				}
 				//Add the event to the array of events.
 				data.events.push(event);
 			}
