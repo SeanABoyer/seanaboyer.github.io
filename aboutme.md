@@ -2,7 +2,7 @@
 layout: page
 title: About me
 ---
-My name is Sean Boyer and I enjoy solving problems. I enjoy gaming(video and board games), coding, bowling, and ultimate frisbee. I grew up as a military child with the dream of becoming a pilot. While that did not happen, I still enjoy avaition and will always try to grab the window seat on a flight. 
+My name is Sean Boyer and I enjoy solving problems. I enjoy gaming (video and board games), coding, bowling, and ultimate frisbee. I grew up as a military child with the dream of becoming a pilot. While that did not happen, I still enjoy avaition and will always try to grab the window seat on a flight. 
 
 ## Education
 I went to a small University in San Antonio Texas where I studied for a Bachelors degree in Computer Information Systems and Security. During college I participated in and later was the president of our AITP (Association of Information Technology Professionals) organization. I competed in multiple competitions while in college (anything from Database Design, to Security, to Application Development), placing in some regional competitions and honorable mention in others. My university had a small rack of servers and network gear, where I built an air gapped pen-testing lab for the students in our organization to train their red team skills for these security competitions. 
