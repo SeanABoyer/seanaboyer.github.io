@@ -5,7 +5,7 @@ title: About me
 My name is Sean Boyer and I enjoy solving problems. I enjoy gaming (video and board games), coding, bowling, and ultimate frisbee. I grew up as a military child with the dream of becoming a pilot. While that did not happen, I still enjoy avaition and will always try to grab the window seat on a flight. 
 
 ## Education
-I went to a small University in San Antonio Texas where I studied for a Bachelors degree in Computer Information Systems and Security. During college I participated in and later was the president of our AITP (Association of Information Technology Professionals) organization. I competed in multiple competitions while in college (anything from Database Design, to Security, to Application Development), placing in some regional competitions and honorable mention in others. My university had a small rack of servers and network gear, where I built an air gapped pen-testing lab for the students in our organization to train their red team skills for these security competitions. 
+I went to a small University in San Antonio Texas where I studied for a Bachelors degree in Computer Information Systems and Security. During college I participated in and later was the president of our AITP (Association of Information Technology Professionals) organization. I competed in multiple competitions while in college (anything from Database Design, to Security, to Application Development), placing in some regional competitions and honorable mention in others. My university had a small rack of servers and network gear, where I built an air gapped pen-testing lab for the students in our organization to train their red team skills for security competitions. 
 
 ## Career
 During school I worked part time at the University's help desk. After a year at the help desk I moved to be a Student Assistant System Administrator, where I took manual tasks like "Create XXX guest accounts" and tried my best to automate them. I also assisted with a sub domain for student VM's and assisted in automating where possible with PowerCLI.
@@ -14,7 +14,7 @@ During my summers I took part in internships; My first internship I built a REST
 
 After graduating I began working as a Software Developer, supporting ServiceNow and an in house C# application to support service desk employees. A majority of my time was spent extending ServiceNow, as my team supported Major Incident, Problem, Incident and Knowledge processes, as well as some scoped applications.
 
-I later moved and began working as a Software Developer within another company where my team supports Enterprise Monitoring and ServiceNow. Here, I have been able to extend my knowledge of ServiceNow as we have begun reverting legacy customizations to our instance, while expanding where necessary to support processes. I have also been able to extend my knowledge on how ServiceNow intergrates with other platforms like ScienceLogic, VRealize Suite, and others as we begin to automate infrastrcuture where possible. 
+I later moved and began working as a Software Developer within another company where my team supports Enterprise Monitoring and ServiceNow. Here, I have been able to extend my knowledge of ServiceNow as we have begun reverting legacy customizations in our instance, while expanding where necessary to support processes. I have also been able to extend my knowledge on how ServiceNow intergrates with other platforms like ScienceLogic, VRealize Suite, and others as we begin to automate infrastrcuture where possible, utilzing ServiceNow's Orchestration.
 
 
 ## My Free Time
