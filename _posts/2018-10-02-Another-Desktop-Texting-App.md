@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Another Desktop Texting Application with a private database repository
+title: Another Desktop Texting Application with a private database repository 
 ---
 How I began learning angularJS by attempting to recreate some well known desktop texting applications like pushbullet, yappy, etc.
 
