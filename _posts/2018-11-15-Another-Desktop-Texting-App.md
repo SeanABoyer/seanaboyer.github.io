@@ -5,7 +5,7 @@ title: Another Desktop Texting Application with a private database repository
 How I began learning angularJS by attempting to recreate some well known desktop texting applications like pushbullet, yappy, etc.
 
 ## Problem
-I had recently changed jobs when I started this project and we were planning on moving to a portal that was written on the angualrJS framework and nobody on the team had any expierence with angularJS. I had some expierence at my past job tinkering with the portal and how it implemented angularJS (a lot is obfuscated), but I never developed an applicaiton from scratch using angualrJS. I had used many applications to text from my desktop and was curious how the inner workings worked, so I decided I would try and create a 
+I had recently changed jobs when I started this project and we were planning on moving to a portal that was written on the angualrJS framework and nobody on the team had any expierence with angularJS. I had some expierence at my past job tinkering with the portal and how it implemented angularJS (a lot is obfuscated), but I never developed an applicaiton from scratch using angualrJS. I had used many applications to text from my desktop and was curious how the inner workings worked, so I decided I would try and recreate one!
 
 
 ## Quick Solution OverView
@@ -51,3 +51,5 @@ Essentially the mobile app came up with a screen that asked for the IP address o
 This was my very first angularJS application as well as my first time using a web framework. I did not want to get too deep into the design because I figuered if I wrote the angualr correctly I could change the design of the UI and bind the functions to new elements where necessary. I started with just trying to get messages from the database to display in the conversations area. Soon after succeeding with that I worked on trying to keep it up to date with inserts into the database, I utilized a MQTT library to listen for new publishes and do an API call to the database on inserts. After I got that working I wrapped things up with being able to send new messages to the database that my mobile app would pick up and send from there. 
 
 All of the code for the front end can be found under the [FrontEnd Folder](https://github.com/SeanABoyer/Home_Texting_DB-API/tree/master/FrontEnd).
+
+
