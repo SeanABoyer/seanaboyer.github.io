@@ -7,9 +7,7 @@ A widget to show a calendar similar to those on [http://angular-ui.github.io/ui-
 ## Problem
 My current company had a use case where they wanted to see Upcomming Changes on a calendar view (They were unhappy with the OOB conflict calendar and wanted one that looks like the Cab WorkBench Calendar).  
 (Someone asked in the ServiceNow Slack and I figuered it would be a great time to document how I did this.)  
-**Update Set Below!!**
-
-
+**I have uploaded this to [ServiceNow Share](https://developer.servicenow.com/app.do#!/share/contents/4545518_angular_calendar_widgets_fullcalendar?v=1.1&t=PRODUCT_DETAILS)**
 **Updated on 10/27/18** - Allow for event [Options](https://fullcalendar.io/docs/event-object) to be passed in with filters 
 
 
