@@ -47,6 +47,8 @@ As you can see, the production update set tracker record has been updated to con
 ![alt text](https://raw.githubusercontent.com/SeanABoyer/seanaboyer.github.io/master/img/posts/UpdateSetTracker/Step3.PNG "Step3") 
 As you can see, the production update set tracker rcord has been updated to contain all environments the update set has traveled through in the ServiceNow Environment Field.
 ![alt text](https://raw.githubusercontent.com/SeanABoyer/seanaboyer.github.io/master/img/posts/UpdateSetTracker/Step3a.PNG "Step3a") 
+
+
 ## Changing an Update Set name. (With Pictures)
 Updating the Update Set name will update the update set tracker record.
 
@@ -60,10 +62,11 @@ New Name Update Set in Dev
 New Name Update Set in Prod
 ![alt text](https://raw.githubusercontent.com/SeanABoyer/seanaboyer.github.io/master/img/posts/UpdateSetTracker/NewProd.PNG "NewProd") 
 
+
 ## Reverting/Back Out an Update Set. (With Pictures)
 In some cases, you need to revert (or back out) an update set. But you still want to track that.
 
 Before Back out
-![alt text](https://raw.githubusercontent.com/SeanABoyer/seanaboyer.github.io/master/img/posts/UpdateSetTracker/NewProd.PNG "PreRevert") 
+![alt text](https://raw.githubusercontent.com/SeanABoyer/seanaboyer.github.io/master/img/posts/UpdateSetTracker/PreRevert.PNG "PreRevert") 
 After Back Out
-![alt text](https://raw.githubusercontent.com/SeanABoyer/seanaboyer.github.io/master/img/posts/UpdateSetTracker/NewProd.PNG "PostRevert")
+![alt text](https://raw.githubusercontent.com/SeanABoyer/seanaboyer.github.io/master/img/posts/UpdateSetTracker/PostRevert.PNG "PostRevert")
