@@ -35,35 +35,35 @@ Both the scripted Rest Services and Busines Rules all point back to a UST script
 
 ## Moving an Update Set From Dev to Prod (With Pictures)
 1. Create an Update Set in Dev. (Not linking to a Task)
-![alt text](https://raw.githubusercontent.com/SeanABoyer/seanaboyer.github.io/master/img/posts/angularCalendar/Step1.PNG "Step1") 
+![alt text](https://raw.githubusercontent.com/SeanABoyer/seanaboyer.github.io/master/img/posts/UpdateSetTracker/Step1.PNG "Step1") 
 As you can see, it is now being tracked in our production instance.
-![alt text](https://raw.githubusercontent.com/SeanABoyer/seanaboyer.github.io/master/img/posts/angularCalendar/Step1a.PNG "Step1a") 
+![alt text](https://raw.githubusercontent.com/SeanABoyer/seanaboyer.github.io/master/img/posts/UpdateSetTracker/Step1a.PNG "Step1a") 
 2. Complete the Update Set in Dev, then Retrieve the Update Set from Dev in Test and Commit the Update Set in Test.
-![alt text](https://raw.githubusercontent.com/SeanABoyer/seanaboyer.github.io/master/img/posts/angularCalendar/Step2.PNG "Step2") 
+![alt text](https://raw.githubusercontent.com/SeanABoyer/seanaboyer.github.io/master/img/posts/UpdateSetTracker/Step2.PNG "Step2") 
 As you can see, the production update set tracker record has been updated to contain both the dev and test environment in the ServiceNow Environment Field.
-![alt text](https://raw.githubusercontent.com/SeanABoyer/seanaboyer.github.io/master/img/posts/angularCalendar/Step2a.PNG "Step2a") 
+![alt text](https://raw.githubusercontent.com/SeanABoyer/seanaboyer.github.io/master/img/posts/UpdateSetTracker/Step2a.PNG "Step2a") 
 
 3. Retrieve the Update Set form Test in Prod and Commit the Update Set in Prod.
-![alt text](https://raw.githubusercontent.com/SeanABoyer/seanaboyer.github.io/master/img/posts/angularCalendar/Step3.PNG "Step3") 
+![alt text](https://raw.githubusercontent.com/SeanABoyer/seanaboyer.github.io/master/img/posts/UpdateSetTracker/Step3.PNG "Step3") 
 As you can see, the production update set tracker rcord has been updated to contain all environments the update set has traveled through in the ServiceNow Environment Field.
-![alt text](https://raw.githubusercontent.com/SeanABoyer/seanaboyer.github.io/master/img/posts/angularCalendar/Step3a.PNG "Step3a") 
+![alt text](https://raw.githubusercontent.com/SeanABoyer/seanaboyer.github.io/master/img/posts/UpdateSetTracker/Step3a.PNG "Step3a") 
 ## Changing an Update Set name. (With Pictures)
 Updating the Update Set name will update the update set tracker record.
 
 Old Name Update Set in Dev
-![alt text](https://raw.githubusercontent.com/SeanABoyer/seanaboyer.github.io/master/img/posts/angularCalendar/OldDev.PNG "OldDev") 
+![alt text](https://raw.githubusercontent.com/SeanABoyer/seanaboyer.github.io/master/img/posts/UpdateSetTracker/OldDev.PNG "OldDev") 
 Old Name Update Set in Prod
-![alt text](https://raw.githubusercontent.com/SeanABoyer/seanaboyer.github.io/master/img/posts/angularCalendar/OldProd.PNG "OldProd") 
+![alt text](https://raw.githubusercontent.com/SeanABoyer/seanaboyer.github.io/master/img/posts/UpdateSetTracker/OldProd.PNG "OldProd") 
 Here is the same update set with a name changed.
 New Name Update Set in Dev
-![alt text](https://raw.githubusercontent.com/SeanABoyer/seanaboyer.github.io/master/img/posts/angularCalendar/NewDev.PNG "NewDev") 
+![alt text](https://raw.githubusercontent.com/SeanABoyer/seanaboyer.github.io/master/img/posts/UpdateSetTracker/NewDev.PNG "NewDev") 
 New Name Update Set in Prod
-![alt text](https://raw.githubusercontent.com/SeanABoyer/seanaboyer.github.io/master/img/posts/angularCalendar/NewProd.PNG "NewProd") 
+![alt text](https://raw.githubusercontent.com/SeanABoyer/seanaboyer.github.io/master/img/posts/UpdateSetTracker/NewProd.PNG "NewProd") 
 
 ## Reverting/Back Out an Update Set. (With Pictures)
 In some cases, you need to revert (or back out) an update set. But you still want to track that.
 
 Before Back out
-![alt text](https://raw.githubusercontent.com/SeanABoyer/seanaboyer.github.io/master/img/posts/angularCalendar/NewProd.PNG "PreRevert") 
+![alt text](https://raw.githubusercontent.com/SeanABoyer/seanaboyer.github.io/master/img/posts/UpdateSetTracker/NewProd.PNG "PreRevert") 
 After Back Out
-![alt text](https://raw.githubusercontent.com/SeanABoyer/seanaboyer.github.io/master/img/posts/angularCalendar/NewProd.PNG "PostRevert")
+![alt text](https://raw.githubusercontent.com/SeanABoyer/seanaboyer.github.io/master/img/posts/UpdateSetTracker/NewProd.PNG "PostRevert")
