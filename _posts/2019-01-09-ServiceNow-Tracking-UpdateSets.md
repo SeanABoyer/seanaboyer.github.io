@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Extending the duration of ServiceNow Messages on the Service Portal (Pre London)
+title: Tracking Update Sets and Relating them to Tasks
 ---
 A lightweight application that tracks the environments an update set has been committed to. Capable of linking back to a production record (INC/Story/etc). Works with Single Update Sets, Merged Update Sets, and Batch Update Sets.
 
