@@ -11,7 +11,7 @@ Both at my previous company and my current company, the tracking of update sets 
 ## Quick Solution OverView
 I created a way for update sets to be linked to records in a production instance and be able to track each individual update set to see which instance it had been committed in. This is more of a bolton feature to track update sets, with the hopes of being able to use this to create an automated pipeline in the future.
 
-The solution is on ServiceNow's Community Share by the name of [Update Set Tracking](https://developer.servicenow.com/app.do#!/share/contents/4545518_update_set_tracking?v=1.0&t=PRODUCT_DETAILS). More Information is provided here as well as post installation/configuration steps.
+The solution is on ServiceNow's Community Share by the name of [Update Set Tracking](https://developer.servicenow.com/app.do#!/share/contents/4545518_update_set_tracking?v=1.0&t=PRODUCT_DETAILS). _More Information is provided here as well as post installation/configuration steps._
 
 
 ## In-Depth Solution OverView
@@ -23,7 +23,7 @@ I then created a few business rules to manage when to fire off to hit the EndPoi
 On the Local Update Set table, one is to document the creation of a new Update set and the other is to document an update to the update set.
 On the Remote Update set table, one is to document the additon of a new environment and the other is to document the removal of a environment.
 
-Both the scripted Rest Services and Busines Rules all point back to a UST script include. the UST script include is an extension of the USTCore Script include so that, if needed extra logic can be added without messing with core code.
+Both the scripted Rest Services and Busines Rules all point back to a UST script include. the UST script include is an extension of the USTCore Script include so that, if needed extra logic can be added without messing with core code. This contains all of the logic for the application.
 
 ## Moving an Update Set From Dev to Prod (With Pictures)
 1. Create an Update Set in Dev. (Not linking to a Task)
