@@ -11,15 +11,7 @@ Both at my previous company and my current company, the tracking of update sets 
 ## Quick Solution OverView
 I created a way for update sets to be linked to records in a production instance and be able to track each individual update set to see which instance it had been committed in. This is more of a bolton feature to track update sets, with the hopes of being able to use this to create an automated pipeline in the future.
 
-The solution is on ServiceNow's Community Share by the name of [Update Set Tracking](https://developer.servicenow.com/app.do#!/share/contents/4545518_update_set_tracking?v=1.0&t=PRODUCT_DETAILS).
-
-Features:
-    Track which environment an Update Set is in (Individual/Megred/Batched), allowing for tracking through reverts as well.
-    Link multiple update sets to tasks.
-    Track Update Set Name Change
-    Feature Switch for the instance
-
-
+The solution is on ServiceNow's Community Share by the name of [Update Set Tracking](https://developer.servicenow.com/app.do#!/share/contents/4545518_update_set_tracking?v=1.0&t=PRODUCT_DETAILS). More Information is provided here as well as post installation/configuration steps.
 
 
 ## In-Depth Solution OverView
